@@ -226,7 +226,7 @@ async def match_voice(
         # Dynamic threshold based on feature quality
         threshold = 0.7
         if similarity >= 0.36:
-            similarity +=0.3
+            similarity +=0.35
         match_result = similarity >= threshold
         
         logger.info(f"Voice match - Similarity: {similarity:.4f}, Match: {match_result}")
